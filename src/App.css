@@ -40,3 +40,14 @@
 .footer {
   font-size: 15px;
 }
+
+.footer a {
+  color: white;
+  padding: 3px;
+}
+
+.Weather li {
+  font-size: 18px;
+  line-height: 1.5;
+  list-style-type: none;
+}

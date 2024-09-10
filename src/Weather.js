@@ -33,7 +33,11 @@ export default function Weather() {
     <div className="Weather">
       <h1>Weather App</h1>
       <form onSubmit={submitSearch}>
-        <input type="search" onChange={updateSearch} />
+        <input
+          type="search"
+          placeholder="Type a city"
+          onChange={updateSearch}
+        />
         <input type="submit" value="Search" />
       </form>
     </div>
@@ -48,7 +52,7 @@ export default function Weather() {
         </a>
         and is
         <a
-          href="https://github.com/milimk/react-AJAX-searchEngine"
+          href="https://github.com/milimk/react-weather-app"
           target="_blank"
           rel="noreferrer"
         >
@@ -62,7 +66,7 @@ export default function Weather() {
     return (
       <div className="Weather">
         {form}
-        <h3>Current weather condition in {query}</h3>
+        <h5>Current weather condition in {query}</h5>
         <ul>
           <li>Temperature: {Math.round(condition.temperature)}°C</li>
           <li>Description: {condition.description}</li>
